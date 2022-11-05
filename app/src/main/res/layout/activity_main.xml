@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|bottom"
+            android:textSize="70sp"
+            android:text=""
+            android:textColor="@color/black"
+            tools:ignore="NestedWeights,RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="1"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,NestedWeights,SpUsage,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="2"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="3"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionOperation"
+            android:text="+"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonFour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="4"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,NestedWeights,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="5"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="6"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonMinos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionOperation"
+            android:text="-"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:scrollbarSize="22dp">
+
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="7"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,NestedWeights,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="8"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="9"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonMultiplication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionOperation"
+            android:text="X"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionEquals"
+            android:text="="
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,NestedWeights,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonZero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionNumber"
+            android:text="0"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/ButtonClear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionClear"
+            android:text="C"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonDivision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTint="#4CAF50"
+            android:onClick="buttonFunctionOperation"
+            android:text="/"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            app:iconPadding="10dp"
+            app:iconTint="#4CAF50"
+            app:rippleColor="#4CAF50"
+            tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+    </LinearLayout>
+</LinearLayout>
